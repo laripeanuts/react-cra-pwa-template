@@ -20,7 +20,8 @@ eslint-config-xo eslint-plugin-jest eslint-plugin-prettier eslint-plugin-react \
 eslint-plugin-simple-import-sort prettier
 
 # Outros
-pnpm i - D npm install --save styled-components react-router-dom@6 react-is axios
+pnpm i - D npm install --save styled-components react-router-dom@6 react-is axios \
+commitizen init cz-conventional-changelog --save-dev --save-exact
 
 echo '
 node_modules
@@ -28,7 +29,7 @@ dist
 ' > .prettierignore
 
 echo '
-{
+{ 
   "parser": "typescript",
   "singleQuote": true,
   "trailingComma": "all"
@@ -91,6 +92,7 @@ npx npe scripts.fix "pnpm run format && pnpm run lint:fix"
 npx npe scripts.format "prettier --write **/src/*.{ts,tsx,js,jsx,json,yaml}"
 npx npe scripts.lint "eslint src/**/*.{ts,tsx,js,jsx}"
 npx npe scripts.lint:fix "pnpm run lint --fix"
+npx npe config.commitizen.path "cz-conventional-changelog"
 
 printf '0a\n/* eslint-disable */\n.\nw\n' | ed src/serviceWorkerRegistration.ts
 printf '0a\n/* eslint-disable */\n.\nw\n' | ed src/service-worker.ts
