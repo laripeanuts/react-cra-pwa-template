@@ -56,7 +56,6 @@
     ]
   },
   "devDependencies": {
-    "-": "0.0.1",
     "@babel/core": "^7.18.0",
     "@babel/plugin-syntax-flow": "^7.17.12",
     "@babel/plugin-transform-react-jsx": "^7.17.12",
@@ -65,7 +64,6 @@
     "@types/testing-library__jest-dom": "^5.14.3",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.25.0",
-    "D": "1.0.0",
     "axios": "0.27.2",
     "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
@@ -76,9 +74,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "init": "0.1.2",
     "install": "0.13.0",
-    "npm": "8.10.0",
     "prettier": "^2.6.2",
     "react-is": "18.1.0",
     "react-router-dom": "6",
